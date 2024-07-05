@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 3.12)
+set(PROJECT_NAME Engine)
+add_library(${PROJECT_NAME} STATIC
+    src/test.cpp
+    includes/test.hpp
+)
+
+target_include_directories(${PROJECT_NAME} PUBLIC includes)
+target_compile_features(${PROJECT_NAME} PUBLIC cxx_std_17)
