@@ -10,3 +10,6 @@ target_compile_features(${PROJECT_NAME} PUBLIC cxx_std_17)
 
 add_subdirectory(../external/GLFW ${CMAKE_CURRENT_BINARY_DIR}/GLFW)
 target_link_libraries(${PROJECT_NAME} glfw)
+
+add_subdirectory(../external/glad ${CMAKE_CURRENT_BINARY_DIR}/glad)
+target_link_libraries(${PROJECT_NAME} glad)
