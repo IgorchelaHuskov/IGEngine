@@ -1,4 +1,4 @@
 namespace Engine
 {
-    void sey_hello();
+    int sey_hello();
 }

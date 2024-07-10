@@ -3,5 +3,6 @@
 int main()
 {
     Engine::sey_hello();
+    return 0;
 }
 
